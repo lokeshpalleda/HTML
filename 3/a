@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31 sample output</title>
+    <style>
+        .welcome{
+            height:100px; 
+            widht:20px; 
+            background-color:rgb(0, 89, 255); 
+            font-size:20px; 
+            color:white;
+            display: flex; 
+            padding:20px;
+            justify-content: center; 
+            align-items: center;
+            margin:0;
+        }
+        .dash{
+            height:40px; 
+            widht:10px; 
+            background-color:rgb(240, 245, 247); 
+            font-size:20px; 
+            color:rgb(63, 61, 61);
+            gap:20px;   
+            justify-content: center; 
+            align-items: center;
+            margin:0;
+        }
+        h1,h3{
+            margin:0;
+        }
+        .frames-container{
+            display:flex;
+            
+        }
+        .frame{
+            height:450px; 
+            width:1200px;
+            background-color:rgb(229, 236, 236); 
+            font-size:20px; 
+            border: 1px solid rgb(48, 44, 44);
+            margin:20px;
+            margin-left:10px;
+        }
+        .frame1{
+            height:450px; 
+            width:600px;
+            background-color:rgb(229, 236, 236); 
+            font-size:20px; 
+            border: 1px solid rgb(48, 44, 44);
+            margin: 20px;
+        }
+        .copy{
+            height:80px; 
+            width:1800px;
+            background-color:rgb(40, 41, 41); 
+            color:aliceblue;
+            font-size: 20px;
+            display:flex;
+            justify-content: center; 
+            align-items: center; 
+            text-align :center;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>3a sample output</i></h1>
+    <div class="welcome">
+        <h1 align="center"; >welcome to my website</h1>
+    </div>
+    <div class="dash">
+        <h3 align="center">Home About Services Contact</h3>
+    </div>
+    <div class="frames-container">
+    <div class="frame">
+        <h2>About Us</h2>
+        <p>Welcome to our website! We are dedicated to providing the best services to our customers.Learn more about our journey and values.Here is a word with a <span style="color:blue">highlight </span>effect.</p>
+        <a href:"web.png"></a>
+    </div>
+    <div class="frame1">
+        <h3>Latest News</h3>
+        <p>check out our latest updates</p>
+    </div>
+    </div>
+    <div class="copy">
+        <p>2024 My Website | All Rights Reserved</p>
+    </div>
+</body>
+</html>
