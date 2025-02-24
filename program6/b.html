@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6b1</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        button{
+            padding:1% 3%;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #3a8ada;
+            color: white;
+            border-radius: 5px;
+            
+        }
+    </style>
+    <script>
+        function show(){
+            window.alert("alert");
+        }
+        function writeto(){
+            document.write("this text is directly ");
+        }
+        function logto(){
+            console.log(f12)
+        }
+        function update(){
+            document.getElementById("internal-demo").innerHTML = "This text is updated using inner html";
+        }
+    </script>
+</head>
+<body>
+    <h1 >JavaScript Output Methods</h1>
+    <button onclick="show()">Show Alert</button>
+    <button onclick="writeto()"> write to Document</button>
+    <button onclick="logto()">Log to Console</button>
+    <button onclick="update()">Update Inner HTML</button>
+    <p id="internal-demo"></p>
+</body>
+</html>
