@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 output</title>
+    <style>
+        #id{
+            color: red;
+        }
+        .class{
+            background-color: yellow;
+        }
+    .container{
+            text-align: center;
+        }
+        span{
+            color: rgb(129, 18, 18);
+            font-size: 30px;
+        }
+        .container1{
+            text-align: center;
+            color: green;
+            background-color: rgb(167, 236, 236);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:blue">Simple Selectors</h1>
+    <div class="container">
+    <h2 id="id"><span >T</span>his is an ID selector example.</h2>
+    <h2 class="class"><span >T</span>his is a Class selector example.</h2>
+    <h1>Combinator Selectors</h1>
+    </div>
+    <div class="container1">
+        <h2 ><span >T</span>his graph is inside a div (desendant selector).</h2>
+        <h2 ><span >T</span>his is a direct child paragragh (child selector).</h2>
+    </div>
+    
+    
+</html>
