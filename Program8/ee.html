@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8e</title>
+    <style>
+        body{
+            font-family:Arial;
+            text-align: center;
+        }
+        #output{
+            padding: 10px;
+            border:2px solid rgb(177, 177, 224);
+            background-color: rgb(156, 165, 192);
+            font-size: 18px;
+            display:inline-block;
+        }
+        button{
+            padding: 10px 15px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Armstrong Number Checker</h1>
+    <button onclick="checkArmstrong()">Check Number</button>
+    <div id="output">click the button and enter the number</div>
+    <script>
+        function checkArmstrong(){
+            let num=parseInt(prompt("enter a number:"));
+            if(isNaN(num) || num<0){
+                alert("enter a valid positive number");
+                return;
+            }
+            let sum=0;
+            let temp=num;
+            let digits=num.toString().length;
+            while(temp>0){
+                let digit=temp%10;
+                sum+=Math.pow(digit,digits);
+                temp=Math.floor(temp/10);
+            }
+            let result=(sum===num)?`${num} is an armstrong number`:`${num} is not armstrong number`;
+            document.getElementById("output").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
