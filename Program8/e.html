@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #007BFF;
+            background-color: #f0f8ff;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            color: #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Armstrong Number Checker</h1>
+    <button onclick="checkArmstrong()">Check Number</button>
+    <div id="output">Click the button and enter a number.</div>
+
+    <script>
+        function checkArmstrong() {
+            // Get user input
+            let num = parseInt(prompt("Enter a number:"));
+            
+            if (isNaN(num) || num < 0) {
+                alert("Please enter a valid positive integer.");
+                return;
+            }
+
+            let sum = 0;
+            let temp = num;
+            let digits = num.toString().length; // Find the number of digits
+
+            // Calculate sum of each digit raised to the power of the number of digits
+            while (temp > 0) {
+                let digit = temp % 10; // Extract last digit
+                sum += Math.pow(digit, digits); // Add cube of digit
+                temp = Math.floor(temp / 10); // Remove last digit
+            }
+
+            // Compare sum with the original number
+            let result = (sum === num) ? `${num} is an Armstrong number.` : `${num} is NOT an Armstrong number.`;
+
+            // Display the result
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
